@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ViewPagerFragment"
+    android:background="@drawable/login_background"
+    android:alpha="0.9"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutViewPagerLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/generalInfoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textColor="@color/background"
+            android:textSize="36sp"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:id="@+id/invitationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textColor="@color/background"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            />
+
+        <ImageView
+            android:id="@+id/viewPagerIV"
+            android:layout_width="350dp"
+            android:layout_height="412dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startBTN"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Начать"
+        android:textColor="#3884F1"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:background="@drawable/rounded_corner"
+        android:padding="18dp"
+        />
+
+</LinearLayout>
